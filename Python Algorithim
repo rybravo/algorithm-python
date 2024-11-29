@@ -1,0 +1,100 @@
+def breakfast_algorithm():
+    steps = [
+        "Start by washing your hands thoroughly.",
+        "Gather all the ingredients: bread, eggs, butter, salt, pepper, and juice.",
+        "Toast the bread in a toaster or on a pan with some butter.",
+        "Crack the eggs into a bowl, add a pinch of salt and pepper, and whisk.",
+        "Heat a pan with butter and pour in the eggs to scramble them.",
+        "Cook the eggs until they're fluffy and fully cooked.",
+        "Serve the eggs on a plate with the toast on the side.",
+        "Pour yourself a glass of juice to complete the breakfast.",
+        "Clean up the kitchen after you're done."
+    ]
+
+    tips = [
+        "Tip: Adding a splash of milk to the eggs makes them creamier.",
+        "Fun Fact: Breakfast is considered the most important meal of the day.",
+        "Health Tip: Whole grain bread provides more nutrients and fiber.",
+        "Reminder: Don't forget to turn off the stove after cooking!"
+    ]
+
+    print("Breakfast Preparation Algorithm:")
+    for step in steps:
+        print(step)
+
+    print("\nAdditional Tips & Facts:")
+    for tip in tips:
+        print(tip)
+
+def exercise_algorithm():
+    steps = [
+        "Warm up with light stretching for 5 minutes.",
+        "Do 20 push-ups to strengthen your upper body.",
+        "Perform 30 squats to work on your legs.",
+        "Run in place for 10 minutes to get your heart rate up.",
+        "Cool down with stretching for 5 minutes."
+    ]
+
+    tips = [
+        "Tip: Maintain proper form to avoid injury.",
+        "Fun Fact: Regular exercise can improve your mood.",
+        "Health Tip: Stay hydrated before, during, and after exercise.",
+        "Reminder: Always listen to your body and rest if needed."
+    ]
+
+    print("Exercise Routine Algorithm:")
+    for step in steps:
+        print(step)
+
+    print("\nAdditional Tips & Facts:")
+    for tip in tips:
+        print(tip)
+
+def study_algorithm():
+    steps = [
+        "Create a quiet and comfortable study environment.",
+        "Organize your study materials and set clear goals.",
+        "Take regular breaks to avoid burnout.",
+        "Use active study techniques like summarizing and questioning.",
+        "Review your notes and practice problems regularly."
+    ]
+
+    tips = [
+        "Tip: Use a planner to keep track of study sessions.",
+        "Fun Fact: Studying in short, focused sessions can be more effective than long periods.",
+        "Health Tip: Ensure you get enough sleep to improve memory retention.",
+        "Reminder: Stay motivated by rewarding yourself after completing study goals."
+    ]
+
+    print("Study Routine Algorithm:")
+    for step in steps:
+        print(step)
+
+    print("\nAdditional Tips & Facts:")
+    for tip in tips:
+        print(tip)
+
+def main():
+    while True:
+        print("\nChoose an algorithm to view:")
+        print("1. Breakfast Preparation")
+        print("2. Exercise Routine")
+        print("3. Study Routine")
+        print("4. Exit")
+
+        choice = input("Enter the number of your choice: ")
+
+        if choice == '1':
+            breakfast_algorithm()
+        elif choice == '2':
+            exercise_algorithm()
+        elif choice == '3':
+            study_algorithm()
+        elif choice == '4':
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice, please try again.")
+
+if __name__ == "__main__":
+    main()
